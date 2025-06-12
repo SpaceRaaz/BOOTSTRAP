@@ -1,0 +1,25 @@
+header.banner{
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: #fff;
+    background-image: url('/images/img/header-bg.jpg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+header.banner .banner-subheading {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+header.banner .banner-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
