@@ -2,62 +2,211 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DO SOME CODE">
-  <title>Bootsrap</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DO SOME CODE" />
+  <title>Bootstrap Project</title>
 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-  <!-- Font Awesome icons (free version)-->
+
+  <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-  <!-- Google fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" />
 </head>
 
 <body id="page-top">
-  <!-- samepage Top hhhh -->
-
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
-
-      <a class="navbar-brand" href="#page-top"><img src="/images/img/navbar-logo.svg" alt="" width="auto"
-          height="30"></a>
+      <a class="navbar-brand" href="#page-top">
+        <img src="/images/img/navbar-logo.svg" height="30" alt="Logo" />
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expand="false"> Menu
-        <i class="fas fa-bars ms-1"></i>
-
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu <i class="fas fa-bars ms-1"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#"> Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"> Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"> About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"> Team</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"> Contact </a></li>
-
-
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
         </ul>
       </div>
-
     </div>
   </nav>
-  <header class="banner">
+
+  <!-- Banner -->
+  <header class="bg-primary text-white text-center py-6 banner">
     <div class="container">
-      <div class="banner-subheading">Welcome to my page</div>
-      <div class="banner-heading text-uppercase">Hit Space Every Time</div>
-      <a href="#services" class="btn btn-primary btn-x1 text-uppercase">Tell Me More</a>
-
+      <div class="banner-subheading fs-4 mb-2">Hello world from Bootstrap</div>
+      <div class="banner-heading text-uppercase fs-1 fw-bold mb-4">Welcome to the Bootstrap Course</div>
+      <a href="#services" class="btn btn-light btn-xl text-uppercase">Tell me more</a>
     </div>
-
-    </div>
-
   </header>
 
-  <script src="/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Services Section -->
+  <section class="page-section" id="services">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-heading text-uppercase">Services</h2>
+        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x mb-3">
+            <i class="fas fa-circle fa-stack-2x text-warning"></i>
+            <i class="fas fa-shopping-cart fa-stack-1x text-white"></i>
+          </span>
+          <h4 class="my-3">E-commerce</h4>
+          <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda sit illo
+            distinctio, placeat nesciunt explicabo facere numquam deserunt enim doloribus!</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x mb-3">
+            <i class="fas fa-circle fa-stack-2x text-warning"></i>
+            <i class="fas fa-laptop fa-stack-1x text-white"></i>
+          </span>
+          <h4 class="my-3">Responsive Design</h4>
+          <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda sit illo
+            distinctio, placeat nesciunt explicabo facere numquam deserunt enim doloribus!</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x mb-3">
+            <i class="fas fa-circle fa-stack-2x text-warning"></i>
+            <i class="fas fa-lock fa-stack-1x text-white"></i>
+          </span>
+          <h4 class="my-3">Web Security</h4>
+          <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda sit illo
+            distinctio, placeat nesciunt explicabo facere numquam deserunt enim doloribus!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="page-section bg-light" id="portfolio">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-heading text-uppercase">Portfolio</h2>
+        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+      </div>
+      <div class="row">
+        <!-- Portfolio Item 1 -->
+        <div class="col-md-4">
+          <div class="portfolio-item">
+            <a class="portfolio-link" href="#">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+              </div>
+              <img class="img-fluid" src="/images/img/portfolio/1.jpg" alt="Portfolio 1" />
+            </a>
+            <div class="portfolio-caption">
+              <div class="portfolio-caption-heading">Threads</div>
+              <div class="portfolio-caption-subheading text-muted">Illustration</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Item 2 -->
+        <div class="col-md-4">
+          <div class="portfolio-item">
+            <a class="portfolio-link" href="#">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+              </div>
+              <img class="img-fluid" src="/images/img/portfolio/2.jpg" alt="Portfolio 2" />
+            </a>
+            <div class="portfolio-caption">
+              <div class="portfolio-caption-heading">Explore</div>
+              <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
+            </div>
+          </div>
+        </div>
+                <!-- Portfolio Item 2 -->
+        <div class="col-md-4">
+          <div class="portfolio-item">
+            <a class="portfolio-link" href="#">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+              </div>
+              <img class="img-fluid" src="/images/img/portfolio/3.jpg" alt="Portfolio 2" />
+            </a>
+            <div class="portfolio-caption">
+              <div class="portfolio-caption-heading">Explore</div>
+              <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
+            </div>
+          </div>
+        </div>
+                <!-- Portfolio Item 2 -->
+        <div class="col-md-4">
+          <div class="portfolio-item">
+            <a class="portfolio-link" href="#">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+              </div>
+              <img class="img-fluid" src="/images/img/portfolio/4.jpg" alt="Portfolio 2" />
+            </a>
+            <div class="portfolio-caption">
+              <div class="portfolio-caption-heading">Explore</div>
+              <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
+            </div>
+          </div>
+        </div>
+                <!-- Portfolio Item 2 -->
+        <div class="col-md-4">
+          <div class="portfolio-item">
+            <a class="portfolio-link" href="#">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+              </div>
+              <img class="img-fluid" src="/images/img/portfolio/5.jpg" alt="Portfolio 2" />
+            </a>
+            <div class="portfolio-caption">
+              <div class="portfolio-caption-heading">Explore</div>
+              <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Item 3 -->
+        <div class="col-md-4">
+          <div class="portfolio-item">
+            <a class="portfolio-link" href="#">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+              </div>
+              <img class="img-fluid" src="/images/img/portfolio/6.jpg" alt="Portfolio 3" />
+            </a>
+            <div class="portfolio-caption">
+              <div class="portfolio-caption-heading">Finish</div>
+              <div class="portfolio-caption-subheading text-muted">Figma</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-4 bg-dark text-white text-center">
+    <div class="container">
+      <small>&copy; 2025 Raj's Bootstrap Project. All Rights Reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
